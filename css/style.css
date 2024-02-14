@@ -396,7 +396,7 @@ img {
 .icon-link:hover {
   background-color: #404bbf;
 }
-@media screen and (min-width: 769px) and (max-width: 1158px) {
+@media screen and (min-width: 768px) and (max-width: 1158px) {
   .team .container {
     padding-left: 108px;
     padding-right: 108px;
