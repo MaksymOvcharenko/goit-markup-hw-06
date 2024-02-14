@@ -302,7 +302,7 @@ img {
   }
 }
 /* team */
-@media screen (max-width: 320px) {
+@media screen and (max-width: 320px) {
   .team .container {
     padding-left: 28px;
     padding-right: 28px;
