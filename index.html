@@ -22,30 +22,41 @@
   </head>
 
   <body class="body">
-    <!-- <header class="header">
-    <div class="container header-cont">
-      <nav class="nav">
-        <a href="./index.html" class="logo">Web<span class="logoheader-span">Studio</span></a>
-        <ul class="nav-list">
-          <li class="nav-item">
-            <a href="./index.html" class="nav-link active">Studio</a>
-          </li>
-          <li class="nav-item"><a href="" class="nav-link">Portfolio</a></li>
-          <li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
-        </ul>
-      </nav>
-      <address class="contact">
-        <ul class="contact-list">
-          <li class="contact-item">
-            <a href="mailto:info@devstudio.com" class="contact-link">info@devstudio.com</a>
-          </li>
-          <li class="contact-item">
-            <a href="tel:+110001111111" class="contact-link">+11 (000) 111-11-11</a>
-          </li>
-        </ul>
-      </address>
-    </div>
-  </header> -->
+    <header class="header">
+      <div class="container header-cont">
+        <nav class="nav">
+          <a href="./index.html" class="logo"
+            >Web<span class="logoheader-span">Studio</span></a
+          >
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a href="./index.html" class="nav-link active">Studio</a>
+            </li>
+            <li class="nav-item"><a href="" class="nav-link">Portfolio</a></li>
+            <li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
+          </ul>
+          <button type="button" class="menu-mob">
+            <svg class="menu-icon" width="24" height="24">
+              <use href="./images/icons.svg#icon-menu"></use>
+            </svg>
+          </button>
+        </nav>
+        <address class="contact">
+          <ul class="contact-list">
+            <li class="contact-item">
+              <a href="mailto:info@devstudio.com" class="contact-link"
+                >info@devstudio.com</a
+              >
+            </li>
+            <li class="contact-item">
+              <a href="tel:+110001111111" class="contact-link"
+                >+11 (000) 111-11-11</a
+              >
+            </li>
+          </ul>
+        </address>
+      </div>
+    </header>
     <main>
       <section id="main" class="main">
         <div class="container">
@@ -323,17 +334,40 @@
           <ul class="port-list">
             <li class="port-item">
               <div class="port-item-anim">
-                <img
-                  srcset="
-                    ./images/Portfolio-1/Portfolio-1-desktop.jpg    1x,
-                    ./images/Portfolio-1/Portfolio-1-desktop@2x.jpg 2x
-                  "
-                  src="./images/Portfolio1.jpg"
-                  alt="Team Card 1"
-                  width="360"
-                  height="300"
-                  class="port-img"
-                />
+                <picture>
+                  <source
+                    media="(min-width:1158)"
+                    srcset="
+                      ./images/Portfolio-1/Portfolio-1-desktop.jpg    1x,
+                      ./images/Portfolio-1/Portfolio-1-desktop@2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(min-width:768)"
+                    srcset="
+                      ./images/Portfolio-1/Portfolio-1-tablet.jpg   1x,
+                      ./images/Portfolio-1/Portfolio-1-tablet2x.jpg 2x
+                    "
+                  />
+                  <source
+                    media="(max-width:1158)"
+                    srcset="
+                      ./images/Portfolio-1/Portfolio-1-mobile.jpg    1x,
+                      ./images/Portfolio-1/Portfolio-1-mobile@2x.jpg 2x
+                    "
+                  />
+                  <img
+                    srcset="
+                      ./images/Portfolio-1/Portfolio-1-desktop.jpg    1x,
+                      ./images/Portfolio-1/Portfolio-1-desktop@2x.jpg 2x
+                    "
+                    src="./images/Portfolio1.jpg"
+                    alt="Team Card 1"
+                    width="360"
+                    height="300"
+                    class="port-img"
+                  />
+                </picture>
                 <p class="overlay">
                   14 Stylish and User-Friendly App Design Concepts · Task
                   Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App
